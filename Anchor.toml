@@ -1,6 +1,5 @@
 [programs.devnet]
 anchor_template = "HBkEJDx3aSQVVztJf86zkwkG44B9RdU8sd44xvR7rNjc"
-likearray = "HavvbGE7ws5XSKMNpvTaqBPVbH5JGk7UUoKNW2NST6qb"
 
 [registry]
 url = "https://anchor.projectserum.com"

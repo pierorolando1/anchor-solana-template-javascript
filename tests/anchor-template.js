@@ -43,24 +43,3 @@ describe('anchor-template', () => {
   })
 });
 
-describe("Vector", () => {
-  const provider = anchor.Provider.env()
-  anchor.setProvider(provider)
-
-  const program = anchor.workspace.Likearray
-
-  const itemsAccount = anchor.web3.Keypair.generate()
-
-  it("Is init", async () => {
-    const tx = await program.rpc.initialize({
-      accounts: {
-        arrayAccount: itemsAccount.publicKey,
-        user: provider.wallet.publicKey,
-        systemProgram: anchor.web3.SystemProgram.programId
-      },
-      signers: [itemsAccount]
-    })
-
-    console.log("Your other signature", tx)
-  })
-})
